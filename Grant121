@@ -1,0 +1,27 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+		{
+		while (true)  //this is indefinite loop, has to be at the start of the indefinite loop
+		{
+			
+		    Console.WriteLine("Enter a password:"); //this is the user typing in their password
+		    string password = Console.ReadLine(); //this is setting the users password
+		    if (password == "Grant12") //if the user inputs END, this will break the loop
+				
+		    {
+				Console.WriteLine(password);
+				Console.WriteLine("I am done.");// breaking the loop
+				break;
+			}
+			
+			else
+			{
+				Console.WriteLine(password);//the user will keep typing in a password until loop is broken, which is END
+			}	
+			
+		  }
+	}
+} 
